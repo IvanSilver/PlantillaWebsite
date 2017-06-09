@@ -3,7 +3,7 @@ body {
 }
 nav {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 500;
 }
@@ -62,6 +62,11 @@ nav ul li ul li {
 }
 #carousel {
 	background: #fff;
+} 
+#carousel img{
+	width:100%; 
+	height:556px;
+	vertical-align:bottom; 
 }
 #first-block {
 	background: #fff;
@@ -115,7 +120,7 @@ footer p, footer a:link, footer a:visited, footer a:hover {
 section h2 {
 	font-size: 2.5rem;
 	font-weight: 300;
-	margin: 0;
+	margin: 100;
 	text-transform: uppercase;
 }
 p.subtitile {
@@ -137,6 +142,12 @@ section h1 {
 	font-weight: 300;
 	text-transform: uppercase;
 }
+section h4 {
+	color: #fff;  
+	font-size: 1.4rem;
+	font-weight: 100;
+	text-transform: uppercase;
+}
 #second-block p {
 	color: #fff;
 }
@@ -150,6 +161,23 @@ a.button {
 	padding: 0.625rem;
 	text-transform: uppercase;
 }
+a.button:hover{
+	animation: 	1s click 1;
+}
+@keyframes click{
+	30%{
+
+		transform:scaleX(1.25) scaleY(.75);
+	}
+	50%{
+		transform: scaleX(.75) scaleY(1.25);
+	}
+
+		75%{
+		transform: scaleX(1.15) scaleY(.85);
+	}
+}
+
 #head {
 	background: none repeat scroll 0 0 rgba(0, 30, 34, 0.85);
 	padding: 9rem 0 5rem;
@@ -164,7 +192,7 @@ a.button {
 #content h2 {
 	font-size: 1.5rem;
 	font-weight: 400;
-	margin: 1rem 0 0.3rem;
+	margin: 0rem 50rem 1rem 0rem;
 	text-transform: none;
 }
 .content-block {
